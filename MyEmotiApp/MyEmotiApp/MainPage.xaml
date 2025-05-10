@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyEmotiApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                x:Name="MoodImage"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="How are you feeling?"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="I'm feeling..."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+            <Button
+                x:Name="HappyBtn"
+                Text="happy!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="OrangeRed"/>
+
+            <Button
+                x:Name="CoolBtn"
+                Text="cool!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="CornflowerBlue"/>
+
+            <Button
+                x:Name="ShyBtn"
+                Text="shy!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill"
+                BackgroundColor="Pink"/>
+
+            <Button
+                x:Name="AngryBtn"
+                Text="angry!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="DarkOrange"/>
+
+            <Button
+                x:Name="InloveBtn"
+                Text="in love!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="HotPink"/>
+
+            <Button
+                x:Name="SickBtn"
+                Text="sick!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="LawnGreen"/>
+
+            <Button
+                x:Name="LuckyBtn"
+                Text="lucky!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="MediumSeaGreen"/>
+
+            <Button
+                x:Name="AwkwardBtn"
+                Text="awkward!" 
+                TextColor="White"
+                Clicked="OnEmojiBtnClicked"
+                HorizontalOptions="Fill" 
+                BackgroundColor="Yellow"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
