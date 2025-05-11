@@ -5,8 +5,8 @@
              Title="Login">
     <VerticalStackLayout>
 
-        <Entry x:Name="Username" Placeholder="Username"></Entry>
-        <Entry x:Name="Password" Placeholder="Password"  IsPassword="True"></Entry>
+        <Entry x:Name="UsernameEntry" Placeholder="Username"></Entry>
+        <Entry x:Name="PasswordEntry" Placeholder="Password"  IsPassword="True"></Entry>
         <Button Text="Login" Clicked="OnLoginBtnClicked" BackgroundColor="LightPink" HorizontalOptions="Fill" ></Button>
         <Button Text="Register" Clicked="OnRegiBtnClicked" BackgroundColor="HotPink" HorizontalOptions="Fill" ></Button>
     </VerticalStackLayout>

@@ -5,8 +5,8 @@ namespace MyEmotiApp
 {
     public partial class App : Application
     {
-        public AppDbContext MyDbContext { get; set; }
-        public UserRepo UserRepo { get; set; }
+        public static AppDbContext MyDbContext { get; set; }
+        public static UserRepo UserRepo { get; set; }
         public App()
         {
             InitializeComponent();
