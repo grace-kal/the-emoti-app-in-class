@@ -6,4 +6,14 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void OnRegiBtnClicked(object? sender, EventArgs e)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void OnLoginBtnClicked(object? sender, EventArgs e)
+    {
+        throw new NotImplementedException();
+    }
 }
