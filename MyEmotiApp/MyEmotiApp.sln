@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEmotiApp", "MyEmotiApp\MyEmotiApp.csproj", "{01AC5BF1-742A-412B-9890-E34466D740E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyEmotiApp", "MyEmotiApp\MyEmotiApp.csproj", "{01AC5BF1-742A-412B-9890-E34466D740E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEmotiApp.Models", "MyEmotiApp.Models\MyEmotiApp.Models.csproj", "{019199C6-4924-4252-AD99-35A5145F7BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyEmotiApp.DataAccess", "MyEmotiApp.DataAccess\MyEmotiApp.DataAccess.csproj", "{68144EFA-DD73-43D0-9DED-E940C2D38D6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +21,14 @@ Global
 		{01AC5BF1-742A-412B-9890-E34466D740E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01AC5BF1-742A-412B-9890-E34466D740E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01AC5BF1-742A-412B-9890-E34466D740E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{019199C6-4924-4252-AD99-35A5145F7BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019199C6-4924-4252-AD99-35A5145F7BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019199C6-4924-4252-AD99-35A5145F7BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019199C6-4924-4252-AD99-35A5145F7BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68144EFA-DD73-43D0-9DED-E940C2D38D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68144EFA-DD73-43D0-9DED-E940C2D38D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68144EFA-DD73-43D0-9DED-E940C2D38D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68144EFA-DD73-43D0-9DED-E940C2D38D6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

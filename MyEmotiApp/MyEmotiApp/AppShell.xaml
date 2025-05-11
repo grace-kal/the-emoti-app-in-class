@@ -4,12 +4,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MyEmotiApp"
-    Shell.FlyoutBehavior="Disabled"
     Title="MyEmotiApp">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:MainPage}"/>-->
 
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="10">
+            <Label Text="Menu"></Label>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="My emoji">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Login">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
+    </FlyoutItem>
 </Shell>
