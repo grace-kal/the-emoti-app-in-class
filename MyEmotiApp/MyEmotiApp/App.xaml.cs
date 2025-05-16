@@ -10,13 +10,14 @@ namespace MyEmotiApp
         public App()
         {
             InitializeComponent();
-            string? connectionString =
-                "Server=localhost;Database=MyEmotiDb;Trusted_Connection=True;TrustServerCertificate=True;";
+            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "MyEmotiDb.db");
 
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlite($"Filename={dbPath}");
 
             MyDbContext = new AppDbContext(optionsBuilder.Options);
+            MyDbContext.Database.EnsureCreated();
+
             UserRepo = new UserRepo(MyDbContext);
 
             // Set the MainPage

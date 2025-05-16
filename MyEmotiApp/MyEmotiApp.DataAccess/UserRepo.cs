@@ -20,11 +20,14 @@ namespace MyEmotiApp.DataAccess
             };
 
             await context.Users.AddAsync(user);
+            await context.SaveChangesAsync();
             return true;
         }
 
         public async Task<User> Login(string username, string password)
         {
+            var us = context.Users.Where(u=>u.Username!=null);
+
             var user = await context.Users.FirstOrDefaultAsync(u => u.Username == username);
             if (user != null && user.HashPassword == HashPass(password))
             {
